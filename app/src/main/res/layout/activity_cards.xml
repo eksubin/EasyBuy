@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    tools:context="com.e_com.subin.e_commerce.cards"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Book name"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/book"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Author : "
+            android:id="@+id/author"
+            android:layout_below="@+id/book"
+            android:layout_alignLeft="@+id/book"
+            android:layout_alignStart="@+id/book"
+            android:textSize="20sp"
+            android:paddingTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="price  :"
+            android:id="@+id/price"
+            android:textSize="23sp"
+            android:layout_below="@+id/author"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:paddingTop="5dp"/>
+        </RelativeLayout>
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Index 5 - 50% off on book price"
+        android:id="@+id/checkBox"
+        android:onClick="f5_click"
+        android:layout_below="@+id/price"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Index 7 - 40 % off on book price"
+        android:id="@+id/checkBox4"
+        android:onClick="f7_click"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Index 10 - 35 % off on book price"
+        android:id="@+id/checkBox3"
+        android:onClick="f10_click"
+        android:layout_below="@+id/checkBox2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is Index ?"
+        android:paddingLeft="9dp"
+        android:onClick="index"
+        android:id="@+id/index1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:onClick="Send_data"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

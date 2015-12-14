@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e_com.subin.e_commerce" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_action_easybuy_logo_edited"
+        android:label="Easy Buy"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".page_1"
+            android:label="Easy Buy" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".page_2"
+            android:label="@string/title_activity_page_2" >
+        </activity>
+        <activity
+            android:name=".page_3"
+            android:label="@string/title_activity_page_3" >
+        </activity>
+        <activity
+            android:name=".cards"
+            android:label="@string/title_activity_cards" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".page_4"
+            android:label="@string/title_activity_page_4" >
+        </activity>
+    </application>
+
+</manifest>
