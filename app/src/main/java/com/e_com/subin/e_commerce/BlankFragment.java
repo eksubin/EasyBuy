@@ -21,6 +21,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
+//hr
 public class BlankFragment extends Fragment {
     private List<Person> persons;
     private RecyclerView rv;
